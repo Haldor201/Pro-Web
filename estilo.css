@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #282828;
 }
 header{
     background-color: #282828;
@@ -28,8 +29,8 @@ nav a:hover{
     color: #ffffff;
 }
 .encabezado-img {
-    background: url("https://static.vecteezy.com/system/resources/previews/005/645/887/non_2x/dark-abstract-carbon-background-black-mosaic-look-modern-texture-simple-metal-illustration-vector.jpg");
-    height: 500px;
+    background: url("https://mms.businesswire.com/media/20221121005149/en/1643238/5/BCP_01.jpg");
+    height: 800px;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -44,4 +45,45 @@ nav a:hover{
 .encabezado-img h1{
     font-size: 80px;
     padding: 30, 0;
+}
+
+#ten {
+    display: flex;
+    justify-content: center;
+}
+
+#ten img {
+    margin: 0 10px;
+}
+
+
+.sub-ten {
+    background-color: #282828;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.704);
+    color: white;
+    padding: 10px;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
 }

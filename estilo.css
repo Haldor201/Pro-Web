@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 header{
-    background-color: #f2f2f2;
+    background-color: #282828;
     text-align: center;
     padding: 25px 0;
 }
@@ -18,14 +18,14 @@ header{
 nav a{
     display: inline-block;
     text-decoration: none;
-    color: #696969;
+    color: #ffffff;
     margin: 0 30px;
     padding: 5px 15px;
     border-radius: 30px;
 }
 nav a:hover{
     background-color: #000;
-    color: #fff;
+    color: #ffffff;
 }
 .encabezado-img {
     background: url("https://static.vecteezy.com/system/resources/previews/005/645/887/non_2x/dark-abstract-carbon-background-black-mosaic-look-modern-texture-simple-metal-illustration-vector.jpg");
@@ -38,10 +38,10 @@ nav a:hover{
     color: #fff;
 }
 
-.encabezadp-img p{
+.encabezado-img p{
     font-size: 20px;
 }
-.encabezadp-img h1{
-    font-size: 50px;
+.encabezado-img h1{
+    font-size: 80px;
     padding: 30, 0;
 }

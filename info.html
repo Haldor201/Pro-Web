@@ -39,8 +39,27 @@
         </p>
         <img src="https://fotografias.larazon.es/clipping/cmsimages01/2022/01/18/FA3257BE-204E-4A76-9538-52EB397B4549/98.jpg?crop=1920,1080,x0,y0&width=1900&height=1069&optimize=low&format=webply" width="900" height="504" alt="Descripción de la imagen" style="margin-left: 10px;">
     </div>
+
+    <section id="pdf">
+        <div>
+            <br>
+            <h1 style="color: white; font-size: 18px;">Ejemplo de caso de uso</h1>
+            <br>
+            <object type="application/pdf" data="./Ejemplo.pdf" height="600px" width="100%"></object>
+        </div>
+    </section>
     
 </body>
 </header>
 </body>
+
+<script>
+    const toggleButton = document.getElementsByClassName("toggle-button")[0];
+    const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+    toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+    });
+
+</script>
 </html>

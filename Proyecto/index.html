@@ -92,6 +92,50 @@
             position: relative;
             display: inline-block;
         }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #a1acf5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -137,22 +181,31 @@
         </div>
     </section>
 
-    <div class="logueo">
-        <div class="image-container">
-            <img class="img2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd5bfe4f-13d1-423e-a124-407266c53fc4/df1cjyx-d5b2e825-b2f9-457e-ba78-ee1653fa64be.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNWJmZTRmLTEzZDEtNDIzZS1hMTI0LTQwNzI2NmM1M2ZjNFwvZGYxY2p5eC1kNWIyZTgyNS1iMmY5LTQ1N2UtYmE3OC1lZTE2NTNmYTY0YmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yn0QEY2t4obEuq9Kjjd--pm_EvXwjHac2c5ceDrzNSE" width="300" height="168" alt="">
-        </div>
-        <form action="">
-            <label for="Correo">Correo</label>
-            <input type="text" name="Correo" id="Correo">
-            <br>
-            <br>
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña">
-            <br>
-            <br>
-            <a style="text-decoration: none; color: rgb(255, 255, 255); background-color: #750303; padding: 10px 20px; bordergb: (255, 255, 255)x solid black;" href="./pagina.html">Enviar</a>
-            <br>
+    <div style="display: flex;">
+        <img style="width: 50%; height: 100%;     margin-right: 10px;" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/02/151561-mejores-tiendas-juegos-digitales-pc.jpg?tf=3840x" alt="">
+        <p>En nuestro proyecto, nos embarcamos en la creación de una plataforma que simula una experiencia de compra online, ofreciendo una amplia gama de videojuegos para PC y accesorios que potencian la experiencia de juego. Con un diseño intuitivo y un catálogo cuidadosamente seleccionado, Level Up tiene como objetivo brindar a los usuarios una experiencia de compra conveniente y emocionante, mientras los sumerge en el apasionante mundo de los videojuegos y la tecnología. </p>
+    </div>
+    <h2>Documentos</h2>
+    <div style="width: 100%; height: 500px; margin-bottom: 10px;">
+        <object style="width: 100%; height: 500px;" data="./doc.pdf" type=""></object>
+    </div>
 
+    <div class="container">
+        <h2>Encuesta de Opinión</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nivel">¿Qué nivel de aceptación le otorga a nuestro proyecto?</label>
+                <input type="radio" name="nivel" value="Excelente"> Excelente
+                <input type="radio" name="nivel" value="Muy bueno"> Muy Bueno
+                <input type="radio" name="nivel" value="Bueno"> Bueno
+                <input type="radio" name="nivel" value="Regular"> Regular
+                <input type="radio" name="nivel" value="Malo"> Malo
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
         </form>
     </div>
 </body>

@@ -4,41 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-</head>
-<body>
+
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             background-color: #282828;
             color: #ffffff;
             font-size: 14px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-    </style>    
 
-    <div class="logueo"
-    style="text-align: center;"
-    </div>
+        img {
+            margin-bottom: 30px;
+        }
 
-    <div class="image-container"
-    style=    
-    "position: relative;
-    display: inline-block;">
+        div form {
+            display: flex;
+            flex-direction: column;
+        }
 
-        <img class="img1" src="https://static.wikia.nocookie.net/roblox/images/9/9b/Level_Up_Logo.png/revision/latest?cb=20171101220707" width="300" height="168" alt="">
-    </div>
+        button {
+            margin-top: 10px;
+        }
+
+        .body {
+            display: grid;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .img {
+            place-self: center;
+        }
+
+        .Tex1 {
+            place-self: center;
+            margin-top: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+        }
+
+        .Tex2 {
+            place-self: center;
+            margin-top: 34px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+        }
+
+        .Tex3 {
+            place-self: center;
+            margin-top: 24px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+        }
+
+        .Tex4 {
+            place-self: center;
+            margin-top: 24px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .Int {
+            place-self: Center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .docente {
+            margin-top: 40px;
+            margin-bottom: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Arial';
+            font-size: 38px;
+            align-items: center;
+        }
+
+        .logueo {
+            text-align: center;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <img class="img" Align="Center" src="https://logosenvector.com/logo/img/utp-universidad-tecnologica-del-peru-4374.png" width="80px" height="113.66" style="height: 110px;" alt="logo"/>
+    <section id="Caratula">
+        <div>
+            <h2 Class="Tex1" Align="Center"><FONT style="color:rgb(255, 255, 255);">Universidad Tecnológica del Perú</FONT></h2>
+            <h3 Class="Tex2" Align="Center"><FONT style="color:rgb(255, 255, 255);">Curso: Taller de Programación Web</FONT></h3>
+            <h4 Class="Tex3" Align="Center"><FONT style="color:rgb(255, 255, 255);">Tema: "Creación de una página web para la venta de videojuegos (Level UP)"</FONT></h4>
+            <h5 Class="Tex4" Align="Center"><FONT style="color:rgb(255, 255, 255);">Integrantes:</FONT></h5>
+            <div>
+                <ol style="display: flex; flex-direction: column-reverse;">
+                    <FONT style="color:rgb(255, 255, 255);" Align="Center" Class="Int">
+                        <li>Calderon Torres, Haldor</li>    
+                        <li>Kohatsu Corigliano, Diego</li>
+                        <li>Ramos Matamoros, Jampier</li>
+                    </FONT>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="fotos">
+        <div class="fotos">
+            <img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiHITJS4uaSCHgyGcoUQ0PbYIn4DmGN78d9w&usqp=CAU" width="160" height="160" alt="">
+            <img class="img2" src="https://i.pinimg.com/736x/76/19/56/7619560b99ee667a6256ceb56a184dee.jpg" width="160" height="160" alt="">
+            <img class="img3" src="https://i.pinimg.com/736x/c1/fb/ab/c1fbab2066a4835af95f86d1e4a4c868.jpg" width="160" height="160" alt="">
+        </div>
+    </section>
+    
+    <section id="datos">
+        <div class="nombres">
+            <FONT class="n1" style="color:rgb(255, 255, 255);">Calderon Torres, Haldor</FONT>
+            <FONT class="n2" style="color:rgb(255, 255, 255);">Kohatsu Corigliano, Diego</FONT>
+            <FONT class="n3" style="color:rgb(255, 255, 255);">Jampier Ramos Matamoros</FONT>
+        </div>
+        <div class="docente">
+            <h6 Align="Center"><FONT style="color:rgb(255, 255, 255);">Docente:</FONT></h6>
+            <img class="img4" src="https://cdn-icons-png.flaticon.com/512/3736/3736502.png" width="120" height="120" alt="">
+            <h6 Align="Center"><FONT style="color:rgb(255, 255, 255);">Jose Antonio Espinal Teves</FONT></h6>
+        </div>
+    </section>
+
+    <div class="logueo">
+        <div class="image-container">
+            <img class="img2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd5bfe4f-13d1-423e-a124-407266c53fc4/df1cjyx-d5b2e825-b2f9-457e-ba78-ee1653fa64be.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNWJmZTRmLTEzZDEtNDIzZS1hMTI0LTQwNzI2NmM1M2ZjNFwvZGYxY2p5eC1kNWIyZTgyNS1iMmY5LTQ1N2UtYmE3OC1lZTE2NTNmYTY0YmUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yn0QEY2t4obEuq9Kjjd--pm_EvXwjHac2c5ceDrzNSE" width="300" height="168" alt="">
+        </div>
         <form action="">
             <label for="Correo">Correo</label>
             <input type="text" name="Correo" id="Correo">
             <br>
             <br>
-            <br>
-
             <label for="Contraseña">Contraseña</label>
             <input type="password" name="Contraseña" id="Contraseña">
             <br>
             <br>
+            <a style="text-decoration: none; color: rgb(255, 255, 255); background-color: #750303; padding: 10px 20px; bordergb: (255, 255, 255)x solid black;" href="./pagina.html">Enviar</a>
             <br>
-            <button><a style="text-decoration: none; color: black;"href="./pagina.html">Enviar</a></button>
 
         </form>
     </div>

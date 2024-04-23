@@ -142,4 +142,25 @@ nav a:hover{
     align-items: center;
     color: #fff;
 }
-
+.imgAbout{
+    width: 50%;
+}
+.infoP{
+    width: 50%;
+}
+.imgyP{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+    .imgAbout{
+        width: 100%;
+    }
+    .infoP{
+        width: 100%;
+    }
+    .imgyP{
+        flex-wrap: wrap;
+    }
+  }
+  

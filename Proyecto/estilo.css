@@ -142,4 +142,14 @@ nav a:hover{
     align-items: center;
     color: #fff;
 }
-
+.animado {
+    animation: desplazamiento 10s linear infinite; 
+    display: inline-table; 
+    font-size: 24px; 
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+@keyframes desplazamiento {
+    0% { transform: translateX(-150%); }
+    100% { transform: translateX(150%); }
+}

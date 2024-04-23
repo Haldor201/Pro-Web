@@ -70,6 +70,7 @@ nav a:hover{
 #ten {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #ten img {

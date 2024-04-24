@@ -218,3 +218,17 @@ nav a:hover{
     75% { margin-left: -300%; }
     95% { margin-left: -300%; }
 }
+.animado {
+    animation: desplazamiento 10s linear infinite; 
+    display: inline-table; 
+    font-size: 24px; 
+    font-family: 'Open Sans', sans-serif;
+}
+@keyframes desplazamiento {
+    0% { transform: translateX(-150%); }
+    100% { transform: translatex(150%); }
+}
+.sub-ten {
+    font-family: 'Gill Sans';
+
+}

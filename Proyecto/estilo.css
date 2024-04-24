@@ -165,24 +165,56 @@ nav a:hover{
     align-items: center;
     color: #fff;
 }
-.imgAbout{
-    width: 50%;
+.slider-frame {
+    width: auto;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
 }
-.infoP{
-    width: 50%;
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite ease-in-out;
 }
-.imgyP{
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+
+.slider-frame li {
+    list-style: none;
+    width: 25%;
+    position: relative;
 }
-@media (max-width: 1200px) {
-    .imgAbout{
-        width: 100%;
-    }
-    .infoP{
-        width: 100%;
-    }
-    .imgyP{
-        flex-wrap: wrap;
-    }
-  }
+
+.slider-frame img {
+    width: 100%;
+}
+
+.slider-frame .textito {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegura que el texto esté encima de las imágenes */
+}
+
+.slider-frame .textito p {
+    font-size: 20px;
+}
+
+.slider-frame .textito h1 {
+    font-size: 80px;
+    padding: 30px 0; /* Ajusta el espaciado del texto */
+}
+
+@keyframes slide {
+    0% { margin-left: 0%; }
+    20% { margin-left: 0%; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+}

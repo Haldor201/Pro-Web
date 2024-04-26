@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .image-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-grow: 1; 
+  }
+
+  .image-container1 img {
+    width: 440px;
+    height: 790px;
+    margin: -5px;
+    transition: transform 0.3s ease;
+    align-items: center;
+  }
+
+  .image-container1 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+</style>
+
+<link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="pagina.html">Inicio</a>
+        <a href="videojuegos.html">Videojuegos</a>
+        <a href="accesorios.html">Accesorios</a>
+        <a href="info.html">Sobre Level Up</a>
+    </nav>
+</header>
+
+<div class="image-container1">
+  <a href="nintendopag.html">
+    <div class="image-container">
+    <img src="./img1/nintendoFoto.png" alt="Imagen 1">
+    <span class="overlay">Nintendo</span>
+</div>
+  </a>
+  <a href="pspag.html">
+    <div class="image-container">
+    <img src="./img1/psFoto.png" alt="Imagen 2">
+    <span class="overlay">Play Station</span>
+</div>
+  </a>
+  <a href="xboxpag.html">
+    <div class="image-container">
+    <img src="./img1/xboxFoto.png" alt="Imagen 3">
+    <span class="overlay">Microsoft Xbox</span>
+</div>
+  </a>
+  <a href="pcpag.html">
+    <div class="image-container">
+    <img src="./img1/pcFoto.png" alt="Imagen 4">
+    <span class="overlay">Ordenador (PC)</span>
+</div>
+  </a>
+</div>

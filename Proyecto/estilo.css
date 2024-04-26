@@ -17,12 +17,6 @@ header{
     padding: 25px 0;
 }
 
-headerNintendo{
-    background-color: rgb(138, 0, 0);
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-}
 
 nav a{
     display: inline-block;

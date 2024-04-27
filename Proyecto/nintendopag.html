@@ -6,29 +6,199 @@
     <title>Nintendo</title>
     <link rel="stylesheet" href="estilo.css">
     <style>
-        .headerNintendo{
-    background-color: rgb(213, 1, 1);
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
+        .headerNintendo {
+            background-color: rgb(213, 1, 1);
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr; /* Una fila para el encabezado y otra para las columnas */
+            grid-template-columns: 1fr 8fr; /* Proporción 1:3 */
+            gap: 10px; /* Espacio entre las filas y columnas */
+        }
+        .header {
+            grid-column: 1 / span 2; /* El encabezado ocupa las dos columnas */
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: rgb(213, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(213, 0, 0);
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .row {
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .column1 {
+            flex: 25%;
+            padding: 5px;
+            align-items: flex-start;
+        }
+        .column1 img {
+            margin-top: 5px;
+            transition: transform 0.3s ease;
+            align-items: flex-start;
+        }
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 100%;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 50%;
+                align-items: flex-start;
+            }
+        }
+      
+        .column1 img:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          align-items: flex-start;
+        }
+
     </style>
 </head>
-
-<body class="cuerpo" style="background-color: white;">
-    <div class="fondo" style="background-color: white;">
-    <nav class="headerNintendo">
-        <a href="pagina.html"><b>Inicio</b></a>
-        <a href="videojuegos.html"><b>Videojuegos</b></a>
-        <a href="accesorios.html"><b>Accesorios</b></a>
-        <a href="info.html"><b>Sobre Level Up</b></a>
-    </nav>
-    <section id="sub-ten">
-        <div class="sub-ten" style="background: rgb(213, 0, 0); color: rgb(255, 255, 255);">
-            <span class="animado"><br><b>Nintendo - Nintendo - Nintendo - Nintendo - Nintendo - Nintendo</b><br><br></span><br>
+<body>
+    <header class="headerNintendo">
+        <nav>
+            <a href="pagina.html"><b>Inicio</b></a>
+            <a href="videojuegos.html"><b>Videojuegos</b></a>
+            <a href="accesorios.html"><b>Accesorios</b></a>
+            <a href="info.html"><b>Sobre Level Up</b></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1 style="font-size: 27px;"><center><span class="animado"><br><b>Nintendo - Nintendo - Nintendo - Nintendo - Nintendo - Nintendo</b><br><br></span><br></center></h1>
         </div>
-    </div>
-</body>
-</html>
+        <div class="column">
+            <h2>Índice</h2>
+            <br>
+            <nav>
+                <ul style="margin-left: 9px;">
+                    <li><a href="#populares">Populares</a></li>
+                    <br>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <br>
+                    <li><a href="#lista-ordenada">Lista Ordenada</a></li>
+                    <br>
+                    <li><a href="#lista-no-ordenada">Lista No Ordenada</a></li>
+                    <br>
+                    <li><a href="#lista-definiciones">Lista de Definiciones</a></li>
+                    <br>
+                    <li><a href="#lista-anidada">Lista Anidada</a></li>
+                    <br>
+                    <li><a href="#tabla">Tabla</a></li>
+                    <br>
+                    <li><a href="#imagenes">Imagenes</a></li>
+                    <br>
+                    <li><a href="#objetos">Objetos</a></li>
+                    <br>
+                    <li><a href="#formulario.html">Formulario</a></li>
+                    <br>
+                </ul>
+            </nav>
+        </div>
+        <section id="populares">
+        <div class="column">
+            <div class="row">
+                <div class="column1">
+                  <a href="pcpag.html" style="position: relative;">
+                    <div class="image-container">
+                    <img src="./img1/mariowonder1.png" alt="Imagen 4">
+                    <span class="overlay">Super Mario Wonder</span></div>
+            
+                    <a href="pcpag.html" style="position: relative;">
+                      <div class="image-container">
+                      <img src="./img1/mk8.png" alt="Imagen 4">
+                      <span class="overlay">Mario Kart 8 Deluxe</span></div>
+            
+                      <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/mm2.png" alt="Imagen 4">
+                        <span class="overlay">Super Mario Maker</span></div>
+            
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/ssbult.png" alt="Imagen 4">
+                        <span class="overlay">Super Smash Bros Ultimate</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/splatoon1.png" alt="Imagen 4">
+                            <span class="overlay">Splatoon 3</span></div>
+
+                            <a href="pcpag.html" style="position: relative;">
+                                <div class="image-container">
+                                <img src="./img1/letsgo.png" alt="Imagen 4">
+                                <span class="overlay">Pokémon: Let's go Pikachu / Eevee</span></div>
+
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/zelda1.png" alt="Imagen 4">
+                        <span class="overlay">The Legend of Zelda: Tears of the Kingdom</span></div>
+                        
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/smo.png" alt="Imagen 4">
+                            <span class="overlay">Super Mario Odyssey</span></div>
+
+                  <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/sm3d.png" alt="Imagen 4">
+                            <span class="overlay">Super Mario 3D All Stars </span></div>
+
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/bandicoot.png" alt="Imagen 4">
+                        <span class="overlay">Crash Bandicoot N. Sane Trilogy</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/metroid.png" alt="Imagen 4">
+                            <span class="overlay">Metroid Dread</span></div>
+                  
+                </div>
+              </div>
+            </body>
+            </html>

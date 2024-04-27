@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+    img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+    .row {
+      display: flex;
+      padding: 5px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .column1 {
+      flex: 25%;
+      padding: 5px;
+      position: relative; /* Añadir posición relativa */
+    }
 
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .image-container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-grow: 1; 
-  }
-
-  .image-container1 img {
-    width: 440px;
-    height: 790px;
-    margin: -5px;
-    transition: transform 0.3s ease;
-    align-items: center;
-  }
-
-  .image-container1 img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-</style>
-
-<link rel="stylesheet" href="estilo.css">
-
+  </style>
 </head>
 <body>
+  <div class="row">
+    <div class="column1">
+      <a href="pcpag.html" style="position: relative;">
+        <div class="image-container">
+        <img src="./img1/mariowonder1.png" alt="Imagen 4">
+        <span class="overlay">Super Mario Wonder</span></div>
 
-<header>
-    <nav>
-        <a href="pagina.html">Inicio</a>
-        <a href="videojuegos.html">Videojuegos</a>
-        <a href="accesorios.html">Accesorios</a>
-        <a href="info.html">Sobre Level Up</a>
-    </nav>
-</header>
+        <a href="pcpag.html" style="position: relative;">
+          <div class="image-container">
+          <img src="./img1/mk8.png" alt="Imagen 4">
+          <span class="overlay">Mario Kart 8 Deluxe</span></div>
 
-<div class="image-container1">
-  <a href="nintendopag.html">
-    <div class="image-container">
-    <img src="./img1/nintendoFoto.png" alt="Imagen 1">
-    <span class="overlay">Nintendo</span>
-</div>
-  </a>
-  <a href="pspag.html">
-    <div class="image-container">
-    <img src="./img1/psFoto.png" alt="Imagen 2">
-    <span class="overlay">Play Station</span>
-</div>
-  </a>
-  <a href="xboxpag.html">
-    <div class="image-container">
-    <img src="./img1/xboxFoto.png" alt="Imagen 3">
-    <span class="overlay">Microsoft Xbox</span>
-</div>
-  </a>
-  <a href="pcpag.html">
-    <div class="image-container">
-    <img src="./img1/pcFoto.png" alt="Imagen 4">
-    <span class="overlay">Ordenador (PC)</span>
-</div>
-  </a>
-</div>
+      <a href="pagina3.html" style="position: relative;"><img alt="foto1" src="img1/acc.png"/>
+        <span class="overlay">Mario Kart 8 Deluxe</span></a>
+
+    </div>
+
+    <div class="column1">
+      <a href="pagina4.html"><img alt="foto1" src="img1/acc.png"/><span class="overlay">Super Mario Wonder</span></a>
+      <a href="pagina5.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina6.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina7.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina8.html"><img alt="foto1" src="img1/acc.png"/></a>
+    </div>
+
+    <div class="column1">
+      <a href="pagina9.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina10.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina11.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina12.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina13.html"><img alt="foto1" src="img1/acc.png"/></a>
+    </div>
+
+    <div class="column1">
+      <a href="pagina14.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina15.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina16.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina17.html"><img alt="foto1" src="img1/acc.png"/></a>
+      <a href="pagina18.html"><img alt="foto1" src="img1/acc.png"/></a>
+    </div>
+  </div>
+</body>
+</html>
+
+

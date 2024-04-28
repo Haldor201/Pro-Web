@@ -5,20 +5,329 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .headerNintendo {
+            background-color: rgb(79, 0, 50);
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr; 
+            grid-template-columns: 1fr 8fr; 
+            gap: 10px; 
+        }
+        .header {
+            grid-column: 1 / span 2; 
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: rgb(79, 0, 50);
+            color: rgb(255, 255, 255);
+        }
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(79, 0, 50);
+            color: rgb(255, 255, 255);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 234, 1);
+        }
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .row {
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .column1 {
+            flex: 25%;
+            padding: 5px;
+            align-items: flex-start;
+        }
+        .column1 img {
+            margin-top: 5px;
+            transition: transform 0.3s ease;
+            align-items: flex-start;
+        }
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 100%;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 50%;
+                align-items: flex-start;
+            }
+        }
+      
+        .column1 img:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          align-items: flex-start;
+        }
+
+        .Tex1 {
+            font-size: 24px;
+            margin-left: 10px;
+
+        }
+
+
+    </style>
 </head>
-<header>
-    <nav>
-        <a href="pagina.html">Inicio</a>
-        <a href="videojuegos.html">Videojuegos</a>
-        <a href="accesorios.html">Accesorios</a>
-        <a href="info.html">Sobre Level Up</a>
-    </nav>
-    <section id="sub-ten">
-        <div class="sub-ten" style="background: rgb(0, 0, 0); color: rgb(236, 175, 255);">
-            <span class="animado"><br><b>Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC)</b><br><br></span><br>
-        </div>
-</header>
 <body>
-    
-</body>
+    <header class="headerNintendo">
+        <nav>
+            <a href="pagina.html"><b>Inicio</b></a>
+            <a href="videojuegos.html"><b>Videojuegos</b></a>
+            <a href="accesorios.html"><b>Accesorios</b></a>
+            <a href="info.html"><b>Sobre Level Up</b></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1 style="font-size: 27px;"><center><span class="animado"><br><b>Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC) - Ordenador (PC)</b><br><br></span><br></center></h1>
+        </div>
+        <div class="column">
+            <br>
+            <h2>Índice</h2>
+            <br>
+            <nav>
+                <ul style="margin-left: 9px;">
+                    <li><a href="#populares">Populares</a></li>
+                    <br>
+                    <li><a href="#Ofertas">Promociones</a></li>
+                    <br>
+                    <li><a href="#Lanzamientos">Lanzamientos</a></li>
+                    <br>
+                    <li><a href="#">Juegos Retro</a></li>
+                    <br>
+                </ul>
+            </nav>
+        </div>
+        <section id="populares">
+        <div class="column">
+            <div class="row">
+                <div class="column1">
+                  <a href="pcpag.html" style="position: relative;">
+                    <div class="image-container">
+                    <img src="./img1/mariowonder1.png" alt="Imagen 4">
+                    <span class="overlay">Super Mario Wonder</span></div>
+            
+                    <a href="pcpag.html" style="position: relative;">
+                      <div class="image-container">
+                      <img src="./img1/mk8.png" alt="Imagen 4">
+                      <span class="overlay">Mario Kart 8 Deluxe</span></div>
+            
+                      <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/mm2.png" alt="Imagen 4">
+                        <span class="overlay">Super Mario Maker</span></div>
+            
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/ssbult.png" alt="Imagen 4">
+                        <span class="overlay">Super Smash Bros Ultimate</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/splatoon1.png" alt="Imagen 4">
+                            <span class="overlay">Splatoon 3</span></div>
+
+                            <a href="pcpag.html" style="position: relative;">
+                                <div class="image-container">
+                                <img src="./img1/letsgo.png" alt="Imagen 4">
+                                <span class="overlay">Pokémon: Let's go Pikachu / Eevee</span></div>
+
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/zelda1.png" alt="Imagen 4">
+                        <span class="overlay">The Legend of Zelda: Tears of the Kingdom</span></div>
+                        
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/smo.png" alt="Imagen 4">
+                            <span class="overlay">Super Mario Odyssey</span></div>
+
+                  <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/sm3d.png" alt="Imagen 4">
+                            <span class="overlay">Super Mario 3D All Stars </span></div>
+
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/bandicoot.png" alt="Imagen 4">
+                        <span class="overlay">Crash Bandicoot N. Sane Trilogy</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/metroid.png" alt="Imagen 4">
+                            <span class="overlay">Metroid Dread</span></div>
+                  
+                </div>
+              </div>
+
+            </section>
+    </div>
+        <section id="Ofertas">
+        <div class="column">
+
+            <div class="slider-frame" style="width: auto;
+            height: 300px;";>
+                <ul>
+                    <li><img src="./img1/b1.png" alt="">
+                    <div class="textito" style="   top: 44%;">
+                        <p>¡Síguenos en nuestras</p>
+                        <h1>Redes Sociales!</h1>
+                        <p>YouTube - Facebook - X - Instagram - Tik Tok</p>
+                    </div></li>
+                    <li><img src="./img1/b2.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡En oferta!</p>
+                            <h1>Kirby's Dream Buffet</h1>
+                            <p>Exclusivo en Nintendo Switch</p></li>
+                    <li><img src="./img1/b3.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡1-2 acción!</p>
+                            <h1>1-2 Switch!</h1>
+                            <p>¡En oferta!</p></li>
+                    <li><img src="./img1/b4.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡La trifuerza bajó de precio!</p>
+                            <h1 style="font-size: 48px;";>The Legend of Zelda: Breath of the Wild</h1>
+                            <p>Exclusivo en Nintendo Switch</p></li>
+            </div>
+            <br>
+
+            <a Class="Tex1";><b><FONT>Promociones</FONT></b></a>
+            <div class="row">
+                <div class="column1">
+                  <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/kirby.png" alt="Imagen 4">
+                            <span class="overlay">Kirby's Dream Buffet</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/1-2-switch.png" alt="Imagen 4">
+                            <span class="overlay">1-2 Switch!</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/zeldabotw.png" alt="Imagen 4">
+                            <span class="overlay">The Legend of Zelda: Breath of the Wild</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/arms.png" alt="Imagen 4">
+                            <span class="overlay">ARMS</span></div>
+                </div>
+              </div>
+
+            </section>
+       
+            <section id="Lanzamientos">
+
+
+                <div class="column">
+
+                    <div class="slider-frame" style="width: auto;
+                    height: 300px;";>
+                        <ul>
+                            <li><img src="./img1/b1.1.png" alt="">
+                            <div class="textito" style="   top: 44%;">
+                                <p>¡Calidad y Prestigio!</p>
+                                <h1>Level Up</h1>
+                                <p>Síguenos como "LevelUp"</p>
+                            </div></li>
+                            <li><img src="./img1/b2.2.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>De damicela a protagonista</p>
+                                    <h1 style="font-size: 48px;">Princess Peach: Showtime!</h1>
+                                    <p>Lanzamiento: Marzo 2024</p></li>
+                            <li><img src="./img1/b3.3.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>¡Miedo en HD!</p>
+                                    <h1>Luigi's Mansion HD</h1>
+                                    <p>Lanzamiento Verano 2024</p></li>
+                            <li><img src="./img1/b4.4.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>¡Un mundo de papel!</p>
+                                    <h1 style="font-size: 48px;";>Paper Mario: La Puerta Milenaria</h1>
+                                    <p>Exclusivo en Nintendo Switch</p></li>
+                    </div>
+                    <br>
+
+                    <a Class="Tex1";><b><FONT>Lanzamientos</FONT></b></a>
+                    <div class="row">
+                        <div class="column1">
+                          <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/peach.png" alt="Imagen 4">
+                                    <span class="overlay">Princess Peach: Showtime!</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/luigi.png" alt="Imagen 4">
+                                    <span class="overlay">Luigi's Mansion 2 HD</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/papermario.png" alt="Imagen 4">
+                                    <span class="overlay">Paper Mario: La Puerta Milenaria</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/sonic.png" alt="Imagen 4">
+                                    <span class="overlay">Sonic Superstarts</span></div>
+                        </div>
+                      </div>
+
+
+                    </section>
+               
+            </body>
+            </html>
 </html>

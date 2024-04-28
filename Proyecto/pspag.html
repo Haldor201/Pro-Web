@@ -5,20 +5,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Station</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        .headerNintendo {
+            background-color: rgb(0, 8, 95);
+            width: 100%;
+            text-align: center;
+            padding: 25px 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr; 
+            grid-template-columns: 1fr 8fr; 
+            gap: 10px; 
+        }
+        .header {
+            grid-column: 1 / span 2; 
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: rgb(0, 8, 95);
+            color: rgb(255, 255, 255);
+        }
+        .column {
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(0, 8, 95);
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(233, 233, 233);
+        }
+        img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .row {
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .column1 {
+            flex: 25%;
+            padding: 5px;
+            align-items: flex-start;
+        }
+        .column1 img {
+            margin-top: 5px;
+            transition: transform 0.3s ease;
+            align-items: flex-start;
+        }
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 100%;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column1 {
+                flex: 50%;
+                align-items: flex-start;
+            }
+        }
+      
+        .column1 img:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          align-items: flex-start;
+        }
+
+        .Tex1 {
+            font-size: 24px;
+            margin-left: 10px;
+
+        }
+
+
+    </style>
 </head>
-<header>
-    <nav>
-        <a href="pagina.html">Inicio</a>
-        <a href="videojuegos.html">Videojuegos</a>
-        <a href="accesorios.html">Accesorios</a>
-        <a href="info.html">Sobre Level Up</a>
-    </nav>
-    <section id="sub-ten">
-        <div class="sub-ten" style="background: rgb(0, 0, 106); color: rgb(255, 255, 255);">
-            <span class="animado"><br><b>Play Station - Play Station - Play Station - Play Station - Play Station - Play Station</b><br><br></span><br>
-        </div>
-</header>
 <body>
-    
-</body>
-</html>
+    <header class="headerNintendo">
+        <nav>
+            <a href="pagina.html"><b>Inicio</b></a>
+            <a href="videojuegos.html"><b>Videojuegos</b></a>
+            <a href="accesorios.html"><b>Accesorios</b></a>
+            <a href="info.html"><b>Sobre Level Up</b></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <h1 style="font-size: 27px;"><center><span class="animado"><br><b>Play Station - Play Station - Play Station - Play Station - Play Station - Play Station</b><br><br></span><br></center></h1>
+        </div>
+        <div class="column">
+            <br>
+            <h2>Índice</h2>
+            <br>
+            <nav>
+                <ul style="margin-left: 9px;">
+                    <li><a href="#populares">Populares</a></li>
+                    <br>
+                    <li><a href="#Ofertas">Promociones</a></li>
+                    <br>
+                    <li><a href="#Lanzamientos">Lanzamientos</a></li>
+                    <br>
+                    <li><a href="#">Juegos Retro</a></li>
+                    <br>
+                </ul>
+            </nav>
+        </div>
+        <section id="populares">
+        <div class="column">
+            <div class="row">
+                <div class="column1">
+                  <a href="pcpag.html" style="position: relative;">
+                    <div class="image-container">
+                    <img src="./img1/gow1.png" alt="Imagen 4">
+                    <span class="overlay">God of War Ragnarok</span></div>
+            
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/acc1.png" alt="Imagen 4">
+                        <span class="overlay">Assetto Corsa Competizione</span></div>
+            
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/gt71.png" alt="Imagen 4">
+                        <span class="overlay">Gran Turismo 7</span></div>
+            
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/tekken81.png" alt="Imagen 4">
+                        <span class="overlay">Tekken 8</span></div>
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/horizon1.png" alt="Imagen 4">
+                        <span class="overlay">Horizon Zero Dawn</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/motogp1.png" alt="Imagen 4">
+                            <span class="overlay">MotoGP23</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/spiderman.png" alt="Imagen 4">
+                        <span class="overlay">Marvel's Spider-Man 2</span></div>
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/uncharted.png" alt="Imagen 4">
+                        <span class="overlay">Uncharted: The Lost Legacy</span></div>
+
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                        <div class="image-container">
+                        <img src="./img1/ratched.png" alt="Imagen 4">
+                        <span class="overlay">Ratchet & Clank: Rift Apart</span></div>
+
+                        <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/ghost.png" alt="Imagen 4">
+                            <span class="overlay">Ghost Of Tsushima</span></div>
+                  
+                </div>
+              </div>
+
+            </section>
+    </div>
+        <section id="Ofertas">
+        <div class="column">
+
+            <div class="slider-frame" style="width: auto;
+            height: 300px;";>
+                <ul>
+                    <li><img src="./img1/psf1.png" alt="">
+                    <div class="textito" style="   top: 44%;">
+                        <p>¡Variedad y Divesión!</p>
+                        <h1>Level Up</h1>
+                        <p>¡Juega y disfruta!</p>
+                    </div></li>
+                    <li><img src="./img1/psf12.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡El juego oficial de la</p>
+                            <h1 style="font-size: 48px;";>MEJOR Temporada de Fórmula 1</h1>
+                            <p>en oferta!</p></li>
+                    <li><img src="./img1/psf13.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡El hombre araña</p>
+                            <h1>PRESENTE en Level Up!</h1>
+                            <p>¡Únete al Spiderverso!</p></li>
+                    <li><img src="./img1/psf14.png" alt="">
+                        <div class="textito" style="top: 44%;">
+                            <p>¡Una nueva aventura!</p>
+                            <h1 style="font-size: 48px;";>Stella Blade</h1>
+                            <p>Exclusivo de Play Station 5</p></li>
+            </div>
+            <br>
+
+            <a Class="Tex1";><b><FONT>Promociones</FONT></b></a>
+            <div class="row">
+                <div class="column1">
+                  <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/f12021.png" alt="Imagen 4">
+                            <span class="overlay">F12021</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/re4.png" alt="Imagen 4">
+                            <span class="overlay">Resident Evil 4</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/codmw3.png" alt="Imagen 4">
+                            <span class="overlay">Call of Duty: Modern Warfare III</span></div>
+                </div>
+            
+                <div class="column1">
+                    <a href="pcpag.html" style="position: relative;">
+                            <div class="image-container">
+                            <img src="./img1/nba21.png" alt="Imagen 4">
+                            <span class="overlay">NBA 2K21</span></div>
+                </div>
+              </div>
+
+            </section>
+       
+            <section id="Lanzamientos">
+
+
+                <div class="column">
+
+                    <div class="slider-frame" style="width: auto;
+                    height: 300px;";>
+                        <ul>
+                            <li><img src="./img1/psf2.png" alt="">
+                            <div class="textito" style="   top: 44%;">
+                                <p>¡Síguenos en YouTube!</p>
+                                <h1>Level Up</h1>
+                                <p>Nos encuentras como "LevelUp"</p>
+                            </div></li>
+                            <li><img src="./img1/psf21.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>¡De los 80 al presente!</p>
+                                    <h1 style="font-size: 48px;">Super Mario Bros</h1>
+                                    <p>Juegos Retro (Próximamente)</p></li>
+                            <li><img src="./img1/psf23.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>¡Vive la velocidad de 2 ruedas en</p>
+                                    <h1>Level Up!</h1>
+                                    <p>MotoGP23, las motos de 2 y 4 tiempos más rápidas del mundo</p></li>
+                            <li><img src="./img1/psf24.png" alt="">
+                                <div class="textito" style="top: 44%;">
+                                    <p>¡Las mejores jugadas y regates</p>
+                                    <h1 style="font-size: 48px;";>las vives en Level Up!</h1>
+                                    <p>Disponible en múltiples plataformas</p></li>
+                    </div>
+                    <br>
+
+                    <a Class="Tex1";><b><FONT>Lanzamientos</FONT></b></a>
+                    <div class="row">
+                        <div class="column1">
+                          <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/stellarblade.png" alt="Imagen 4">
+                                    <span class="overlay">Stellar Blade</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/freedomplanet2.png" alt="Imagen 4">
+                                    <span class="overlay">Freedom Planet 2</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/planetoflana.png" alt="Imagen 4">
+                                    <span class="overlay">Planet of Lana</span></div>
+                        </div>
+                    
+                        <div class="column1">
+                            <a href="pcpag.html" style="position: relative;">
+                                    <div class="image-container">
+                                    <img src="./img1/grounded.png" alt="Imagen 4">
+                                    <span class="overlay">Grounded</span></div>
+                        </div>
+                      </div>
+
+
+                    </section>
+               
+            </body>
+            </html>

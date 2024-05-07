@@ -168,7 +168,7 @@ nav a:hover{
 }
 .slider-frame {
     width: auto;
-    height: 900px;
+    height: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -237,4 +237,41 @@ nav a:hover{
     padding: 5px;
     box-sizing: border-box;
     background-color: rgb(49, 0, 15)
+}
+.infoP{
+    width: 50%;
+    color: white; 
+    font-size: 18px;
+}
+.imgAbout{
+    width: 50%;
+}
+.imgyP{
+    display: flex;
+    background-color: black;
+}
+@media (max-width: 1450px) {
+    .imgyP{
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+    }
+    .infoP{
+        width: 100%;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .imgAbout{
+        width: 100%;
+    }
+}
+@media (max-width: 650px) {
+    .infoP{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .imgAbout{
+        width: auto;
+        height: auto;
+    }
 }

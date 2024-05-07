@@ -240,6 +240,8 @@ nav a:hover{
 }
 .infoP{
     width: 50%;
+    color: white; 
+    font-size: 18px;
 }
 .imgAbout{
     width: 50%;
@@ -257,13 +259,19 @@ nav a:hover{
     .infoP{
         width: 100%;
         margin-left: 0px;
+        padding: 10px;
     }
     .imgAbout{
         width: 100%;
     }
 }
 @media (max-width: 650px) {
-    .imgAbout{
+    .infoP{
         width: 100%;
+        margin-left: 0px;
+    }
+    .imgAbout{
+        width: auto;
+        height: auto;
     }
 }

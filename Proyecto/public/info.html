@@ -31,16 +31,60 @@
             .fondo {
                 background: url(./img1/fondoSobreLU.png); 
             }
-        </style>
-        <link rel="stylesheet" href="./estilo.css">
+            .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #a1acf5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .container h2 {
+                text-align: center;
+                color: #333;
+            }
+            form {
+                margin-top: 20px;
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+
+            </style>
+            <link rel="stylesheet" href="./estilo.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="pagina.html">Inicio</a>
-                <a href="videojuegos.html">Videojuegos</a>
-                <a href="accesorios.html">Accesorios</a>
-                <a href="info.html">Sobre Level Up</a>
+                <a href="pagina.html"><b>Inicio</b></a>
+                <a href="videojuegos.html"><b>Videojuegos</b></a>
+                <a href="accesorios.html"><b>Accesorios</b></a>
+                <a href="info.html"><b>Sobre Level Up</b></a>
             </nav>
             <br>
             <div class="infocabe">
@@ -68,16 +112,17 @@
                         <font class="n3" style="color:rgb(255, 255, 255);">Ramos Matamoros, Jampier</font>
                     </div>
                     <br>
+                    <br>
             
                     <div style="display: flex;">
-                        <img style="width: 40%; height: 100%; margin-right: 10px;" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/02/151561-mejores-tiendas-juegos-digitales-pc.jpg?tf=3840x" alt="">
+                        <img style="width: 38%; height: 100%; margin-left: 24px;" src="./img1/catalogoEjemplo.png" alt="">
                         <p style="font-size: 18px; margin-right: 80px; margin-left: 80px; margin-top: 140px;">En nuestro proyecto, nos embarcamos en la creación de una plataforma que simula una experiencia de compra online, ofreciendo una amplia gama de videojuegos para PC, Play Station, Nintendo, entre otras, además de accesorios que potencian la experiencia de juego. Con un diseño intuitivo y un catálogo cuidadosamente seleccionado, Level Up tiene como objetivo brindar a los usuarios una experiencia de compra conveniente y emocionante, mientras los sumerge en el apasionante mundo de los videojuegos y la tecnología. </p>
                     </div>
                     
                     <br>
 
                     <div style="display: flex;">
-                        <img style="width: 40%; height: 100%; margin-right: 0px;" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/02/151561-mejores-tiendas-juegos-digitales-pc.jpg?tf=3840x" alt="">
+                        <img style="width: 38%; height: 100%; margin-left: 24px;" src="./img1/catalogoEjemplo2.png" alt="">
                         <p style="font-size: 18px; margin-right: 80px; margin-left: 80px; margin-top: 10px;">La propuesta de la marca "Level Up", se basa en la venta de videojuegos y accesorios relacionados con estos, en gran medida gracias al auge, la demanda y el crecimiento de esta industria en la actualidad, acompañado con el aumento de la venta de videojuegos digitales.
                         <br>Esto ayudará a que los jugadores, puedan adquirirlos de forma más rápida y eficiente, desde cualquier lugar del planeta, y a un precio más accesible.
                         <br>
@@ -86,6 +131,7 @@
                         <br>
                         <br>Visión:
                         <br>"Aspiramos a ser reconocidos como líderes en la industria de los videojuegos y accesorios, tanto a nivel local como internacional. Buscamos crear un espacio donde los jugadores puedan encontrar todo lo que necesitan para potenciar su experiencia de juego, desde los últimos lanzamientos hasta los productos más innovadores."
+                        <br>
                         <br>
                         <br>
                     </p>
@@ -102,7 +148,7 @@
     
     <div class="map">
         <br>
-        <h1 style="color: white; margin-left: 18px;">Ubícanos:</h1>
+        <h1 style="color: white; margin-left: 18px;">Ubícanos</h1>
         <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8266103104806!2d-77.04020732485924!3d-12.055448142062607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95c52ec6209%3A0x9f690f7b812a5006!2sWilson%20centro%20c%C3%B3mputo%20compras!5e0!3m2!1ses-419!2spe!4v1713897047582!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -123,6 +169,25 @@
             <object type="application/pdf" data="./Ejemplo.pdf" height="600px" width="100%"></object>
         </div>
     </section>
+
+    <div class="container">
+        <h2>Encuesta de Opinión</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nivel">¿Qué nivel de aceptación le otorga a nuestro proyecto?</label>
+                <input type="radio" name="nivel" value="Excelente"> Excelente
+                <input type="radio" name="nivel" value="Muy bueno"> Muy Bueno
+                <input type="radio" name="nivel" value="Bueno"> Bueno
+                <input type="radio" name="nivel" value="Regular"> Regular
+                <input type="radio" name="nivel" value="Malo"> Malo
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
     
 </body>
 

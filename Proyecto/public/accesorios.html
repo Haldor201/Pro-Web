@@ -35,7 +35,7 @@
         .column {
             padding: 20px;
             box-sizing: border-box;
-            background-color: rgb(105, 71, 97);
+            background-color: rgb(38, 38, 38);
             color: white;
         }
 
@@ -93,39 +93,52 @@
 
         }
 
-        .slider {
+        .container1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start; /* Para alinear las secciones en la parte superior */
+        gap: 20px; /* Espacio entre las secciones */
+    }
+
+    .section {
+        width: 300px; /* Ancho deseado para cada sección */
+        background-color: rgb(38, 38, 38);
+        /* Otros estilos de cada sección */
+    }
+
+    .slider {
         width: 86vw;
         height: auto;
         margin: auto;
         overflow: hidden;
-        }
+        justify-content: flex-end; 
+    }
 
-        .slider .slide-track {
-            display: flex;
-            animation: scroll 40s linear infinite;
-            -webkit-animation: scroll 40s linear infinite;
-            width: calc(200px * 14);
-        }
+    .slider .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(200px * 14);
+    }
 
-        .slider .slide {
-            width: 200px;
-        }
+    .slider .slide {
+        width: 200px;
+    }
 
-        .slider .slide img {
-            width: 100%;
-        }
+    .slider .slide img {
+        width: 100%;
+    }
 
-        @keyframes scroll {
-            0% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-            }
-            100% {
-                -webkit-transform: translateX(calc(-200px * 7));
-                transform: translateX(calc(-200px * 7));
-            }
+    @keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
         }
-
+        100% {
+            -webkit-transform: translateX(calc(-200px * 7));
+            transform: translateX(calc(-200px * 7));
+        }
+    }
 
     </style>
 
@@ -178,6 +191,9 @@
                 </ul>
             </nav>
         </div>
+        
+         <div class="container1">
+
         <section id="nintendo">
         <div class="column" style="background-color: rgb(38, 38, 38);">
 
@@ -229,9 +245,10 @@
             </div>
 
             <br>
+
+            
             
             <section class="images">
-
                 <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
                     <div class="label">
                         <div class="icon">
@@ -240,7 +257,7 @@
                         <div class="info">
                             <div class="main">Pro Controller</div>
                             <div class="sub">Nintendo Switch</div>
-                         </div>
+                        </div>
                     </div>
                 </div>
         
@@ -252,7 +269,7 @@
                         <div class="info">
                             <div class="main">Joy Con</div>
                             <div class="sub">Nintendo Switch</div>
-                         </div>
+                        </div>
                     </div>
                 </div>
         
@@ -264,7 +281,7 @@
                         <div class="info">
                             <div class="main">Volante (Joy Con)</div>
                             <div class="sub">Nintendo Switch</div>
-                         </div>
+                        </div>
                     </div>
                 </div>
         
@@ -276,7 +293,7 @@
                         <div class="info">
                             <div class="main">Estuche para consola</div>
                             <div class="sub">Nintendo Switch</div>
-                         </div>
+                        </div>
                     </div>
                 </div>
         
@@ -288,363 +305,350 @@
                         <div class="info">
                             <div class="main">Dock (Consola)</div>
                             <div class="sub">Nintendo Switch</div>
-                         </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/ps5logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/sonylogo.png" alt="">
+                </div>
+            </div>
+
+            <br>
+
+            <section class="images">
+                <div class="image active" style="background-image:url(./img1/ps5control.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Dualshock 5</div>
+                            <div class="sub">Play Station 5</div>
+                        </div>
                     </div>
                 </div>
         
-            </section>
-
-
-
-            <section id="playstation">
-                <div class="column" style="background-color: rgb(38, 38, 38);">
-        
-                    <div class="slider">
-                        <div class="slide-track">
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendologo.png" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                <div class="image" style="background-image: url(./img1/playstationportal.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Play Station Portal</div>
+                            <div class="sub">Play Station 5</div>
                         </div>
                     </div>
+                </div>
         
-                    <br>
-                    
-                    <section class="images">
+                <div class="image" style="background-image: url(./img1/fundadualshock.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Funda carcasa (Dualshock 5)</div>
+                            <div class="sub">Play Station 5</div>
+                        </div>
+                    </div>
+                </div>
         
-                        <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Pro Controller</div>
-                                    <div class="sub">Nintendo Switch</div>
-                                 </div>
-                            </div>
+                <div class="image" style="background-image: url(./img1/volantelogitechg29ps5.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
                         </div>
-                
-                        <div class="image" style="background-image: url(./img1/joyconimg.png);">
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Joy Con</div>
-                                    <div class="sub">Nintendo Switch</div>
-                                 </div>
-                            </div>
+                        <div class="info">
+                            <div class="main">Volante Logitech G29</div>
+                            <div class="sub">Play Station 5</div>
                         </div>
-                
-                        <div class="image" style="background-image: url(./img1/volantejoycon.png);">
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Volante (Joy Con)</div>
-                                    <div class="sub">Nintendo Switch</div>
-                                 </div>
-                            </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/ps5audifonos.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
                         </div>
-                
-                        <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Estuche para consola</div>
-                                    <div class="sub">Nintendo Switch</div>
-                                 </div>
-                            </div>
+                        <div class="info">
+                            <div class="main">Auriculares Inalámbricos</div>
+                            <div class="sub">Play Station 5</div>
                         </div>
-                
-                        <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
-                            <div class="label">
-                                <div class="icon">
-                                    <i class="bi bi-camera-fill"></i>
-                                </div>
-                                <div class="info">
-                                    <div class="main">Dock (Consola)</div>
-                                    <div class="sub">Nintendo Switch</div>
-                                 </div>
-                            </div>
-                        </div>
-                
-                    </section>
+                    </div>
+                </div>
+            </section>
 
+            <br>
 
-                    <section id="xbox">
-                        <div class="column" style="background-color: rgb(38, 38, 38);">
-                
-                            <div class="slider">
-                                <div class="slide-track">
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                        
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendologo.png" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img1/nintendoswitchlogo.png" alt="">
-                                </div>
-                            </div>
-                
-                            <br>
-                            
-                            <section class="images">
-                
-                                <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
-                                    <div class="label">
-                                        <div class="icon">
-                                            <i class="bi bi-camera-fill"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="main">Pro Controller</div>
-                                            <div class="sub">Nintendo Switch</div>
-                                         </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="image" style="background-image: url(./img1/joyconimg.png);">
-                                    <div class="label">
-                                        <div class="icon">
-                                            <i class="bi bi-camera-fill"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="main">Joy Con</div>
-                                            <div class="sub">Nintendo Switch</div>
-                                         </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="image" style="background-image: url(./img1/volantejoycon.png);">
-                                    <div class="label">
-                                        <div class="icon">
-                                            <i class="bi bi-camera-fill"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="main">Volante (Joy Con)</div>
-                                            <div class="sub">Nintendo Switch</div>
-                                         </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
-                                    <div class="label">
-                                        <div class="icon">
-                                            <i class="bi bi-camera-fill"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="main">Estuche para consola</div>
-                                            <div class="sub">Nintendo Switch</div>
-                                         </div>
-                                    </div>
-                                </div>
-                        
-                                <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
-                                    <div class="label">
-                                        <div class="icon">
-                                            <i class="bi bi-camera-fill"></i>
-                                        </div>
-                                        <div class="info">
-                                            <div class="main">Dock (Consola)</div>
-                                            <div class="sub">Nintendo Switch</div>
-                                         </div>
-                                    </div>
-                                </div>
-                        
-                            </section>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/microsoftlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/xboxlogo.png" alt="">
+                </div>
+            </div>
 
+            <br>
+            
+            <section class="images">
+                <div class="image active" style="background-image:url(./img1/xboxmando.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Mando Inalámbrico</div>
+                            <div class="sub">Xbox Series X</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/mandocargaxboxseriex.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Base de Carga para Mandos</div>
+                            <div class="sub">Xbox Series X</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/audifonosxboxseriesx.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Audífonos Inalámbricos Wireless</div>
+                            <div class="sub">Xbox Series X</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/volanteg923xboxseriex.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Volante Logitech G923</div>
+                            <div class="sub">Xbox Series X</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/palancadecambioslogitechg923xboxseriesx.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Palanca de Cambios, (Volante Logitech G923)</div>
+                            <div class="sub">Xbox Series X</div>
+                        </div>
+                    </div>
+                </div>
 
-                            <section id="pc">
-                                <div class="column" style="background-color: rgb(38, 38, 38);">
-                        
-                                    <div class="slider">
-                                        <div class="slide-track">
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendologo.png" alt="">
-                                            </div>
-                                            <div class="slide">
-                                                <img src="./img1/nintendoswitchlogo.png" alt="">
-                                        </div>
-                                    </div>
-                        
-                                    <br>
-                                    
-                                    <section class="images">
-                        
-                                        <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
-                                            <div class="label">
-                                                <div class="icon">
-                                                    <i class="bi bi-camera-fill"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="main">Pro Controller</div>
-                                                    <div class="sub">Nintendo Switch</div>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="image" style="background-image: url(./img1/joyconimg.png);">
-                                            <div class="label">
-                                                <div class="icon">
-                                                    <i class="bi bi-camera-fill"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="main">Joy Con</div>
-                                                    <div class="sub">Nintendo Switch</div>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="image" style="background-image: url(./img1/volantejoycon.png);">
-                                            <div class="label">
-                                                <div class="icon">
-                                                    <i class="bi bi-camera-fill"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="main">Volante (Joy Con)</div>
-                                                    <div class="sub">Nintendo Switch</div>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
-                                            <div class="label">
-                                                <div class="icon">
-                                                    <i class="bi bi-camera-fill"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="main">Estuche para consola</div>
-                                                    <div class="sub">Nintendo Switch</div>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                
-                                        <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
-                                            <div class="label">
-                                                <div class="icon">
-                                                    <i class="bi bi-camera-fill"></i>
-                                                </div>
-                                                <div class="info">
-                                                    <div class="main">Dock (Consola)</div>
-                                                    <div class="sub">Nintendo Switch</div>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                
-                                    </section>
+            </section>
+
+            <br>
+
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/maclogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/windomslogo.png" alt="">
+                </div>
+            </div>
+
+            <br>
+
+            <section class="images">
+                <div class="image active" style="background-image:url(./img1/tecladogamerpc.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Teclado Gamer RGB</div>
+                            <div class="sub">Ordenador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/mousegamerpc.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Mouse Gamer RGB</div>
+                            <div class="sub">Ordenador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/mousepadgamer.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Mouse Pad Gamer</div>
+                            <div class="sub">Ordenador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/streamdeck.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Stream Deck</div>
+                            <div class="sub">Ordenador</div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/fundalaptop.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Funda para Laptop</div>
+                            <div class="sub">Ordenador</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             
         

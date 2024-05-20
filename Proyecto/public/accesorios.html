@@ -45,7 +45,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: rgb(133, 195, 233);
+            background-color: rgb(221, 221, 221);
         }
         img {
             width: 100%;
@@ -91,6 +91,39 @@
             font-size: 24px;
             margin-left: 10px;
 
+        }
+
+        .slider {
+        width: 86vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        }
+
+        .slider .slide-track {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            -webkit-animation: scroll 40s linear infinite;
+            width: calc(200px * 14);
+        }
+
+        .slider .slide {
+            width: 200px;
+        }
+
+        .slider .slide img {
+            width: 100%;
+        }
+
+        @keyframes scroll {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+            100% {
+                -webkit-transform: translateX(calc(-200px * 7));
+                transform: translateX(calc(-200px * 7));
+            }
         }
 
 
@@ -145,235 +178,476 @@
                 </ul>
             </nav>
         </div>
-        <section id="populares">
-        <div class="column">
-            <div class="slider-frame" style="width: auto;
-            height: 300px;";>
-                <ul>
-                    <li><img src="./img1/switchbanner1.png" alt="">
-                    <div class="textito" style="   top: 44%;">
-                        <p>¡Accesorios para</p>
-                        <h1>Nintendo Switch!</h1>
-                        <p>Level Up</p>
-                    </div></li>
-                    <li><img src="./img1/switchbanner2.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                        <p>¡Accesorios para</p>
-                        <h1>Nintendo Switch!</h1>
-                        <p>Level Up</p>
-                    </div></li>
-                    <li><img src="./img1/switchbanner3.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                        <p>¡Accesorios para</p>
-                        <h1>Nintendo Switch!</h1>
-                        <p>Level Up</p>
-                    </div></li>
-                    <li><img src="./img1/switchbanner4.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                        <p>¡Accesorios para</p>
-                        <h1>Nintendo Switch!</h1>
-                        <p>Level Up</p>
-                    </div></li>
-            </div>
-            <br>
-            <div class="row">
-                <div class="column1">
-                  <a href="Mario Wonder.html" style="position: relative;">
-                    <div class="image-container">
-                    <img src="./img1/nsprocontroller.png" alt="Imagen 4">
-                    <span class="overlay">Pro Controller (Nintendo Switch)</span></div>
-            
-                    <a href="pcpag.html" style="position: relative;">
-                      <div class="image-container">
-                      <img src="./img1/nsjoycon.png" alt="Imagen 4">
-                      <span class="overlay">Joy Con</span></div>
-            
-                      <a href="pcpag.html" style="position: relative;">
-                        <div class="image-container">
-                        <img src="./img1/mm2.png" alt="Imagen 4">
-                        <span class="overlay">Super Mario Maker</span></div>
-            
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                        <div class="image-container">
-                        <img src="./img1/ssbult.png" alt="Imagen 4">
-                        <span class="overlay">Super Smash Bros Ultimate</span></div>
+        <section id="nintendo">
+        <div class="column" style="background-color: rgb(38, 38, 38);">
 
-                        <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/splatoon1.png" alt="Imagen 4">
-                            <span class="overlay">Splatoon 3</span></div>
-
-                            <a href="pcpag.html" style="position: relative;">
-                                <div class="image-container">
-                                <img src="./img1/letsgo.png" alt="Imagen 4">
-                                <span class="overlay">Pokémon: Let's go Pikachu / Eevee</span></div>
-
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                        <div class="image-container">
-                        <img src="./img1/zelda1.png" alt="Imagen 4">
-                        <span class="overlay">The Legend of Zelda: Tears of the Kingdom</span></div>
-                        
-                        <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/smo.png" alt="Imagen 4">
-                            <span class="overlay">Super Mario Odyssey</span></div>
-
-                  <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/sm3d.png" alt="Imagen 4">
-                            <span class="overlay">Super Mario 3D All Stars </span></div>
-
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                        <div class="image-container">
-                        <img src="./img1/bandicoot.png" alt="Imagen 4">
-                        <span class="overlay">Crash Bandicoot N. Sane Trilogy</span></div>
-
-                        <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/metroid.png" alt="Imagen 4">
-                            <span class="overlay">Metroid Dread</span></div>
-                  
-                </div>
-              </div>
-
-            </section>
-    </div>
-        <section id="Ofertas">
-        <div class="column">
-
-            <div class="slider-frame" style="width: auto;
-            height: 300px;";>
-                <ul>
-                    <li><img src="./img1/b1.png" alt="">
-                    <div class="textito" style="   top: 44%;">
-                        <p>¡Síguenos en nuestras</p>
-                        <h1>Redes Sociales!</h1>
-                        <p>YouTube - Facebook - X - Instagram - Tik Tok</p>
-                    </div></li>
-                    <li><img src="./img1/b2.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                            <p>¡En oferta!</p>
-                            <h1>Kirby's Dream Buffet</h1>
-                            <p>Exclusivo en Nintendo Switch</p></li>
-                    <li><img src="./img1/b3.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                            <p>¡1-2 acción!</p>
-                            <h1>1-2 Switch!</h1>
-                            <p>¡En oferta!</p></li>
-                    <li><img src="./img1/b4.png" alt="">
-                        <div class="textito" style="top: 44%;">
-                            <p>¡La trifuerza bajó de precio!</p>
-                            <h1 style="font-size: 48px;";>The Legend of Zelda: Breath of the Wild</h1>
-                            <p>Exclusivo en Nintendo Switch</p></li>
-            </div>
-            <br>
-
-            <a Class="Tex1";><b><FONT>Promociones</FONT></b></a>
-            <div class="row">
-                <div class="column1">
-                  <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/kirby.png" alt="Imagen 4">
-                            <span class="overlay">Kirby's Dream Buffet</span></div>
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/1-2-switch.png" alt="Imagen 4">
-                            <span class="overlay">1-2 Switch!</span></div>
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/zeldabotw.png" alt="Imagen 4">
-                            <span class="overlay">The Legend of Zelda: Breath of the Wild</span></div>
-                </div>
-            
-                <div class="column1">
-                    <a href="pcpag.html" style="position: relative;">
-                            <div class="image-container">
-                            <img src="./img1/arms.png" alt="Imagen 4">
-                            <span class="overlay">ARMS</span></div>
-                </div>
-              </div>
-
-            </section>
-       
-            <section id="Lanzamientos">
-
-
-                <div class="column">
-
-                    <div class="slider-frame" style="width: auto;
-                    height: 300px;";>
-                        <ul>
-                            <li><img src="./img1/b1.1.png" alt="">
-                            <div class="textito" style="   top: 44%;">
-                                <p>¡Calidad y Prestigio!</p>
-                                <h1>Level Up</h1>
-                                <p>Síguenos como "LevelUp"</p>
-                            </div></li>
-                            <li><img src="./img1/b2.2.png" alt="">
-                                <div class="textito" style="top: 44%;">
-                                    <p>De damicela a protagonista</p>
-                                    <h1 style="font-size: 48px;">Princess Peach: Showtime!</h1>
-                                    <p>Lanzamiento: Marzo 2024</p></li>
-                            <li><img src="./img1/b3.3.png" alt="">
-                                <div class="textito" style="top: 44%;">
-                                    <p>¡Miedo en HD!</p>
-                                    <h1>Luigi's Mansion HD</h1>
-                                    <p>Lanzamiento Verano 2024</p></li>
-                            <li><img src="./img1/b4.4.png" alt="">
-                                <div class="textito" style="top: 44%;">
-                                    <p>¡Un mundo de papel!</p>
-                                    <h1 style="font-size: 48px;";>Paper Mario: La Puerta Milenaria</h1>
-                                    <p>Exclusivo en Nintendo Switch</p></li>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
                     </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendologo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                </div>
+            </div>
+
+            <br>
+            
+            <section class="images">
+
+                <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Pro Controller</div>
+                            <div class="sub">Nintendo Switch</div>
+                         </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/joyconimg.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Joy Con</div>
+                            <div class="sub">Nintendo Switch</div>
+                         </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/volantejoycon.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Volante (Joy Con)</div>
+                            <div class="sub">Nintendo Switch</div>
+                         </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Estuche para consola</div>
+                            <div class="sub">Nintendo Switch</div>
+                         </div>
+                    </div>
+                </div>
+        
+                <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="bi bi-camera-fill"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Dock (Consola)</div>
+                            <div class="sub">Nintendo Switch</div>
+                         </div>
+                    </div>
+                </div>
+        
+            </section>
+
+
+
+            <section id="playstation">
+                <div class="column" style="background-color: rgb(38, 38, 38);">
+        
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendologo.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                        </div>
+                    </div>
+        
                     <br>
-
-                    <a Class="Tex1";><b><FONT>Lanzamientos</FONT></b></a>
-                    <div class="row">
-                        <div class="column1">
-                          <a href="pcpag.html" style="position: relative;">
-                                    <div class="image-container">
-                                    <img src="./img1/peach.png" alt="Imagen 4">
-                                    <span class="overlay">Princess Peach: Showtime!</span></div>
-                        </div>
                     
-                        <div class="column1">
-                            <a href="pcpag.html" style="position: relative;">
-                                    <div class="image-container">
-                                    <img src="./img1/luigi.png" alt="Imagen 4">
-                                    <span class="overlay">Luigi's Mansion 2 HD</span></div>
+                    <section class="images">
+        
+                        <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
+                            <div class="label">
+                                <div class="icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="main">Pro Controller</div>
+                                    <div class="sub">Nintendo Switch</div>
+                                 </div>
+                            </div>
                         </div>
-                    
-                        <div class="column1">
-                            <a href="pcpag.html" style="position: relative;">
-                                    <div class="image-container">
-                                    <img src="./img1/papermario.png" alt="Imagen 4">
-                                    <span class="overlay">Paper Mario: La Puerta Milenaria</span></div>
+                
+                        <div class="image" style="background-image: url(./img1/joyconimg.png);">
+                            <div class="label">
+                                <div class="icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="main">Joy Con</div>
+                                    <div class="sub">Nintendo Switch</div>
+                                 </div>
+                            </div>
                         </div>
-                    
-                        <div class="column1">
-                            <a href="pcpag.html" style="position: relative;">
-                                    <div class="image-container">
-                                    <img src="./img1/sonic.png" alt="Imagen 4">
-                                    <span class="overlay">Sonic Superstarts</span></div>
+                
+                        <div class="image" style="background-image: url(./img1/volantejoycon.png);">
+                            <div class="label">
+                                <div class="icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="main">Volante (Joy Con)</div>
+                                    <div class="sub">Nintendo Switch</div>
+                                 </div>
+                            </div>
                         </div>
-                      </div>
-
-
+                
+                        <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
+                            <div class="label">
+                                <div class="icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="main">Estuche para consola</div>
+                                    <div class="sub">Nintendo Switch</div>
+                                 </div>
+                            </div>
+                        </div>
+                
+                        <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
+                            <div class="label">
+                                <div class="icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="main">Dock (Consola)</div>
+                                    <div class="sub">Nintendo Switch</div>
+                                 </div>
+                            </div>
+                        </div>
+                
                     </section>
+
+
+                    <section id="xbox">
+                        <div class="column" style="background-color: rgb(38, 38, 38);">
+                
+                            <div class="slider">
+                                <div class="slide-track">
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                        
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendologo.png" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="./img1/nintendoswitchlogo.png" alt="">
+                                </div>
+                            </div>
+                
+                            <br>
+                            
+                            <section class="images">
+                
+                                <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
+                                    <div class="label">
+                                        <div class="icon">
+                                            <i class="bi bi-camera-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="main">Pro Controller</div>
+                                            <div class="sub">Nintendo Switch</div>
+                                         </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="image" style="background-image: url(./img1/joyconimg.png);">
+                                    <div class="label">
+                                        <div class="icon">
+                                            <i class="bi bi-camera-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="main">Joy Con</div>
+                                            <div class="sub">Nintendo Switch</div>
+                                         </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="image" style="background-image: url(./img1/volantejoycon.png);">
+                                    <div class="label">
+                                        <div class="icon">
+                                            <i class="bi bi-camera-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="main">Volante (Joy Con)</div>
+                                            <div class="sub">Nintendo Switch</div>
+                                         </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
+                                    <div class="label">
+                                        <div class="icon">
+                                            <i class="bi bi-camera-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="main">Estuche para consola</div>
+                                            <div class="sub">Nintendo Switch</div>
+                                         </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
+                                    <div class="label">
+                                        <div class="icon">
+                                            <i class="bi bi-camera-fill"></i>
+                                        </div>
+                                        <div class="info">
+                                            <div class="main">Dock (Consola)</div>
+                                            <div class="sub">Nintendo Switch</div>
+                                         </div>
+                                    </div>
+                                </div>
+                        
+                            </section>
+
+
+                            <section id="pc">
+                                <div class="column" style="background-color: rgb(38, 38, 38);">
+                        
+                                    <div class="slider">
+                                        <div class="slide-track">
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendologo.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="./img1/nintendoswitchlogo.png" alt="">
+                                        </div>
+                                    </div>
+                        
+                                    <br>
+                                    
+                                    <section class="images">
+                        
+                                        <div class="image active" style="background-image:url(./img1/nsprocontroller.png);">
+                                            <div class="label">
+                                                <div class="icon">
+                                                    <i class="bi bi-camera-fill"></i>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="main">Pro Controller</div>
+                                                    <div class="sub">Nintendo Switch</div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="image" style="background-image: url(./img1/joyconimg.png);">
+                                            <div class="label">
+                                                <div class="icon">
+                                                    <i class="bi bi-camera-fill"></i>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="main">Joy Con</div>
+                                                    <div class="sub">Nintendo Switch</div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="image" style="background-image: url(./img1/volantejoycon.png);">
+                                            <div class="label">
+                                                <div class="icon">
+                                                    <i class="bi bi-camera-fill"></i>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="main">Volante (Joy Con)</div>
+                                                    <div class="sub">Nintendo Switch</div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="image" style="background-image: url(./img1/estuchenintendoswitch.png);">
+                                            <div class="label">
+                                                <div class="icon">
+                                                    <i class="bi bi-camera-fill"></i>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="main">Estuche para consola</div>
+                                                    <div class="sub">Nintendo Switch</div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="image" style="background-image: url(./img1/docknintendoswitch.jpg);">
+                                            <div class="label">
+                                                <div class="icon">
+                                                    <i class="bi bi-camera-fill"></i>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="main">Dock (Consola)</div>
+                                                    <div class="sub">Nintendo Switch</div>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                
+                                    </section>
+
+            
+        
+            <script src="js/app2.js"></script>
 </body>
 </html>

@@ -10,23 +10,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function handleUserInput(userInput) {
-        if (userInput === 'Plataforma') {
+        console.log(userInput.toLowerCase());
+        if (userInput.toLowerCase() === 'Plataforma'.toLowerCase()) {
             showMessage('¿Qué plataforma estás buscando? Opciones: Nintendo, PlayStation, Xbox, PC');
-        } else if (userInput === 'Accesorios') {
+        } else if (userInput.toLowerCase() === 'Accesorios'.toLowerCase()) {
             window.location.href = 'accesorios.html';
-        } else if (['Nintendo', 'PlayStation', 'Xbox', 'PC'].includes(userInput)) {
+        } else if (['nintendo', 'playstation', 'xbox', 'pc'].includes(userInput.toLowerCase())) {
             // Verifica si el userInput está en la lista de opciones de plataforma
-            switch (userInput) {
-                case 'Nintendo':
+            switch (userInput.toLowerCase()) {
+                case 'Nintendo'.toLowerCase():
                     window.location.href = 'nintendopag.html';
                     break;
-                case 'PlayStation':
+                case 'PlayStation'.toLowerCase():
                     window.location.href = 'pspag.html';
                     break;
-                case 'Xbox':
+                case 'Xbox'.toLowerCase():
                     window.location.href = 'xboxpag.html';
                     break;
-                case 'PC':
+                case 'PC'.toLowerCase():
                     window.location.href = 'pcpag.html';
                     break;
                 default:

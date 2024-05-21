@@ -1,0 +1,6 @@
+1. https://github.com/Schniz/fnm#shell-setup
+2. https://nodejs.org/en/download/package-manager
+
+Comandos:
+1. fnm use --install-if-missing 20
+2. fnm env --use-on-cd | Out-String | Invoke-Expression

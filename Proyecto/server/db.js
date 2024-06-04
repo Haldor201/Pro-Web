@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 export const conectar=async ()=>{
     try {
-        const conect=await mongoose.connect('');   
-        console.log(conect);
+        await mongoose.connect('mongodb://localhost:27017/TallerWeb');   
+        console.log("Conectado");
     } catch (error) {
         console.log(error);
     }

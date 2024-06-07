@@ -1,9 +1,10 @@
 import bcrypt from "bcryptjs";
 import User from "../models/user.model.js";
-import jwt from "jsonwebtoken"
 import { token } from "../libs/jwt.js";
-export const login=async (req,res)=>{
-    //trayendo datos
+import jwt from "jsonwebtoken";
+import {tokenSecret} from "../config.js"
+export const login = async (req, res) => {
+  //trayendo datos
   const { email, password } = req.body;
 
   try {
@@ -22,7 +23,6 @@ export const login=async (req,res)=>{
 
     //a un cookie se le asigna el token
     res.cookie("token", tokenV);
-
     res.json({
       id: userFound._id,
       username: userFound.username,
@@ -31,17 +31,18 @@ export const login=async (req,res)=>{
   } catch (error) {
     res.status(500).json({ message: ["Error al intentar logearse"] });
   }
-}
+};
 
-export const register=async (req,res)=>{
-    //trayendo datos
+export const register = async (req, res) => {
+  //trayendo datos
   const { email, password, username } = req.body;
   try {
     const userFound = await User.findOne({ email });
 
-    if (userFound) return res.status(400).json({
-      message: ["The email is already in use"],
-    });
+    if (userFound)
+      return res.status(400).json({
+        message: ["The email is already in use"],
+      });
     //encriptamos la contraseña
     const hashPassword = await bcrypt.hash(password, 10);
     //asignando el usuario
@@ -65,4 +66,48 @@ export const register=async (req,res)=>{
   } catch (error) {
     res.status(500).json({ message: "Error en el registro" });
   }
-}
+};
+
+//Salir
+export const logout = async (req, res) => {
+  //                 token vacio
+  res.cookie("token", "", {
+    httpOnly: true,
+    secure: true,
+    expires: new Date(0),
+  });
+  return res.sendStatus(200);
+};
+
+//RUTAS PROTEGIDAS, OSEA QUE ESTA PERMITIDA CUANDO TE LOGEAS
+export const profile = async (req, res) => {
+  //hacemos una busqueda a la bd para saber si hay un usuario
+  const userFound = await User.findById(req.user.id);
+
+  if (!userFound) return res.json({ message: ["Usuario no encontrado"] });
+  res.json({
+    id: userFound._id,
+    username: userFound.username,
+    email: userFound.email,
+    createdAt: userFound.createdAt,
+    updatedAt: userFound.updatedAt,
+  });
+};
+
+export const verifyToken = async (req, res) => {
+  const { token } = req.cookies;
+  if (!token) return res.send(false);
+
+  jwt.verify(token, tokenSecret, async (error, user) => {
+    if (error) return res.sendStatus(401);
+
+    const userFound = await User.findById(user.id);
+    if (!userFound) return res.sendStatus(401);
+
+    return res.json({
+      id: userFound._id,
+      username: userFound.username,
+      email: userFound.email,
+    });
+  });
+};

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.logo{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 897px) { 
+    .formL{
+        width: 80%;
+    }
+ }

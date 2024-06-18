@@ -464,20 +464,27 @@ nav a:hover{
     background-color: rgb(181, 255, 246);
 }
 
-article {
+/*efecto olograma*/
+
+.contenedor-linea {
+    display: flex;
+    gap: 70px; /* Espacio entre los articles */
+}
+
+.recomendados {
     position: relative;
-    width: 250px;
+    width: 250px; /* Ancho fijo para cada article */
     transition: all 0.3s ease;
 }
 
-article img:first-child {
+.recomendados img:first-child {
     box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
     border-radius: 4px;
     object-fit: cover;
-    width: 100%;
+    width: 150%; /* Ancho aumentado para la imagen */
 }
 
-article img:last-child {
+.recomendados img:last-child {
     position: absolute;
     width: 200px;
     bottom: 0;
@@ -485,20 +492,20 @@ article img:last-child {
     right: 0;
     margin: auto;
     transform: translateY(25%);
-    transition: all 0.3s ease; /* Agregado el valor 'all' para que se aplique a todas las propiedades */
+    transition: all 0.3s ease;
     opacity: 0;
 }
 
-article:hover {
+.recomendados:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
 }
 
-article::before {
+.recomendados::before {
     content: "";
     position: absolute;
     bottom: 0;
-    height: 100%;
-    width: 100%;
+    height: 150%;
+    width: 150%;
     background-image: linear-gradient(
         to bottom,
         transparent 10%,
@@ -506,17 +513,18 @@ article::before {
         rgba(0, 0, 0) 95%
     );
     opacity: 0;
-    transition: all 0.3s ease; /* Agregado el valor 'all' para que se aplique a todas las propiedades */
+    transition: all 0.3s ease;
 }
 
-article:hover::before {
+.recomendados:hover::before {
     opacity: 1;
 }
 
-article:hover img:last-child {
+.recomendados:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
 }
+
 
 /*sección accesorios*/
 

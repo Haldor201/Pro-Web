@@ -8,8 +8,9 @@ export default {
     extend: {
       backgroundImage: {
         'fondo-inicio': "url('./imgs/image.png')"
-      }},
+      }
+    },
+      
   },
   plugins: [],
 }
-

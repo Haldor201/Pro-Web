@@ -4,12 +4,12 @@ import { useAuth } from "../context/authcontext";
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const { signin} = useAuth();
+  const { signup} = useAuth();
   const navigate = useNavigate();
   const { handleSubmit, register } = useForm();
 
   const onSubmit = (values) => {
-    signin(values)
+    signup(values)
     navigate("/Home");
   };
 

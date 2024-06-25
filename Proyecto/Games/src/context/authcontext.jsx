@@ -14,15 +14,27 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [errorsA, setErrorsA] = useState([]);
-  const [loading,setLoading]=useState(true);
+  const [loading,setLoading]=useState(false);
   //enviar datos para el registro
   const signup = (user) => {
-
+    try {
+      setUser(user);
+      setIsAuthenticated(true)
+      setLoading(true)  
+    } catch (error) {
+      console.log(error)
+    }
   };
   //enviar datos para el login
   const signin = (user) => {
-    setUser(user);
-    setIsAuthenticated(true)
+    try {
+      setUser(user);
+      setIsAuthenticated(true)
+      setLoading(true)  
+    } catch (error) {
+      console.log(error)
+    }
+    
   };
   //funcion para eliminar los errores despues de un tiempo
   useEffect(() => {

@@ -54,14 +54,13 @@ export const gameList = async (req, res) => {
 //obtiene el token y si esta registrado le permite comprar y hace relacion al documento de los usuarios
 export const gameBuy = async (req, res) => {
   const { token } = req.cookies;
-  if (!token) return res.status(400).json({message:"First Login in the page for to buy a game"});
+  if (!token) return res.status(400).send(["First Login in the page for to buy a game"]);
 
   jwt.verify(token, tokenSecret, async (error, user) => {
     if (error) return res.sendStatus(401);
 
     const userFound = await User.findById(user.id);
     if (!userFound) return res.sendStatus(401);
-
     const {title,description,price}=req.body
     const newGameO=new GameO({
         title,
@@ -72,7 +71,7 @@ export const gameBuy = async (req, res) => {
 
     //guardamos el juego comprado
     const newGameOBD = await newGameO.save();
-    res.json(newGameOBD);
+    res.send(["Comprado"]);
   });
 };
 

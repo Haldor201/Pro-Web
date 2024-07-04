@@ -10,7 +10,7 @@ export const authRequired=(req,res,next)=>{
     const {token}=req.cookies;
     
     if(!token)
-        return res.status(401).json({"Message":"No Autorizado"})
+        return res.status(401).send(["No Autorizado"])
 
     //verificar si es un token que generamos
     jwt.verify(token,tokenSecret,(error,decode)=>{

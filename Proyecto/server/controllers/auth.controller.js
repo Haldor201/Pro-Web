@@ -11,12 +11,12 @@ export const login = async (req, res) => {
     //buscamos usuario por email
     const userFound = await User.findOne({ email });
 
-    if (!userFound) return res.status(400).json({ message: "User not found" });
+    if (!userFound) return res.status(400).json([ "User not found" ]);
     //devuelve false o true si son iguales las contraseñas encriptadas
     const isMatch = await bcrypt.compare(password, userFound.password);
 
     if (!isMatch)
-      return res.status(400).json({ message: ["Password Incorrect"] });
+      return res.status(400).json(["Password Incorrect"] );
 
     //devuelve un token
     const tokenV = await token({ id: userFound._id });
@@ -35,19 +35,17 @@ export const login = async (req, res) => {
 
 export const register = async (req, res) => {
   //trayendo datos
-  const { email, password, username } = req.body;
+  const { email, password } = req.body;
   try {
     const userFound = await User.findOne({ email });
 
     if (userFound)
-      return res.status(400).json({
-        message: ["The email is already in use"],
-      });
+      return res.status(400).send(["The email is already in use"],
+      );
     //encriptamos la contraseña
     const hashPassword = await bcrypt.hash(password, 10);
     //asignando el usuario
     const newUser = new User({
-      username,
       email,
       password: hashPassword,
     });
@@ -60,11 +58,10 @@ export const register = async (req, res) => {
 
     res.json({
       id: newUser._id,
-      username: newUser.username,
       email: newUser.email,
     });
   } catch (error) {
-    res.status(500).json({ message: "Error en el registro" });
+    res.status(500).send(["Error en el registro" ]);
   }
 };
 

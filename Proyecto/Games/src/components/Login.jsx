@@ -5,11 +5,16 @@ import Face from "../imgs/facebook.png";
 import Insta from "../imgs/instagram.png";
 import { useAuth } from "../context/authcontext";
 import { useNavigate } from "react-router-dom";
+import {loginSchema} from "../schemas/aut.js"
+import { zodResolver } from '@hookform/resolvers/zod';
+
 
 function Login() {
-  const { signin } = useAuth();
+  const { signin, errorsA: loginErrors,isAuthenticated } = useAuth();
   const navigate = useNavigate();
-  const { handleSubmit, register } = useForm();
+  const { handleSubmit, register, formState: { errors } } = useForm({
+    resolver: zodResolver(loginSchema),
+  });
   const [chatContent, setChatContent] = useState('');
 
   useEffect(() => {
@@ -84,9 +89,13 @@ function Login() {
 
   const onSubmit = (values) => {
     signin(values);
-    navigate("/Home");
   };
-
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/Home");
+    }
+  }, [isAuthenticated]);
+  
   return (
     <div className="flex justify-center items-center bg-fondo-inicio bg-top w-full h-screen">
       <div className="cG bg-slate-500 absolute bottom-0 right-0 m-2 rounded-sm flex flex-col">
@@ -105,7 +114,11 @@ function Login() {
             <img src={Level} className="w-64" alt="Level Up Logo" />
           </div>
           <div className="grid justify-items-center">
-            <label htmlFor="gmail">Ingresar usuario</label>
+            {loginErrors.map((error, i) => (
+              <p className="text-red-500" key={i}>{error}</p>
+            ))}
+            <label htmlFor="gmail">Ingresar email</label>
+            {errors.email && <p className="text-red-500">{errors.email.message}</p>}
             <input
               id="gmail"
               className="shadow appearance-none border rounded lg:w-2/3 my-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -113,6 +126,7 @@ function Login() {
               {...register("email", { required: true })}
             />
             <label htmlFor="password">Ingresar contraseña</label>
+            {errors.password && <p className="text-red-500">{errors.password.message}</p>}
             <input
               id="password"
               className="shadow appearance-none border rounded lg:w-2/3 my-3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

@@ -42,7 +42,7 @@ export default function ProfilePage() {
         <h1 className='font-serif text-6xl'>Juegos Comprados</h1>
         <div className='flex'>
           {gamesO.map((game, index) => (
-            <div key={index} className="cursor-pointer w-1/6 h-[17rem] min-h-[5rem] m-3 text-center rounded-lg items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 overflow-y-auto">
+            <div key={index} onClick={()=>{alert("Tu codigo es: "+game._id )}} className="cursor-pointer w-1/6 h-[17rem] min-h-[5rem] m-3 text-center rounded-lg items-center justify-center bg-gradient-to-r from-purple-500 to-pink-500 overflow-y-auto">
               <p className='bg-emerald-300 text-black'>{game.title}</p>
               <p  >{game.description}</p>
             </div>
